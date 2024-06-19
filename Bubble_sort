@@ -1,4 +1,4 @@
-class Quicksort {
+class Bubble_sort {
     public static void main(String[] args) {
         int arr[]={7,12,9,11,3};
         int n=arr.length;
