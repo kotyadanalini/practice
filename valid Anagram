@@ -1,0 +1,24 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        // Length check: if lengths are different, they cannot be anagrams
+        if (s.length() != t.length()) {
+            return false;
+        }
+        
+       
+        int[] freq = new int[256]; 
+       
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i)]++;
+            freq[t.charAt(i)]--;
+    
+        }
+        for(int i=0;i<freq.length;i++){
+        if(freq[i]!=0){
+            return false;
+        }
+        }
+        // If all characters and frequencies match
+        return true;
+    }
+}
