@@ -1,0 +1,30 @@
+class Solution {
+    public boolean isValid(String word) {
+        if(word.length()<3){
+            return false;
+        }
+        String v="aeiouAEIOU";
+        String con="bcdfghjklmnpqrstvwxyzBCDFGHJKLAMNPQRSTVWXYZ";
+        String d="0123456789";
+        boolean isv=false;
+        boolean iscon=false;
+
+            for(int i=0;i<word.length();i++){
+                char ch=word.charAt(i);
+                if(v.indexOf(ch)!=-1){
+                    isv=true;
+                }
+                else if(con.indexOf(ch)!=-1){
+                    iscon=true;
+                }
+                else if(d.indexOf(ch)==-1){
+                    return false;
+                }
+
+
+            
+        }
+        return isv&&iscon;
+    }
+
+}
