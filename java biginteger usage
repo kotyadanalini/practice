@@ -1,0 +1,29 @@
+Input (stdin)
+4534534534564657652349234230947234723947234234823048230957349573209483057
+12324000123123
+Expected Output
+4534534534564657652349234230947234723947234234823048230957361897209606180
+55883604162280336406756306792388486954842095626514567092436543480395420696739182427011
+
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.math.BigInteger;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        BigInteger a=sc.nextBigInteger();
+        BigInteger b=sc.nextBigInteger();
+        BigInteger c=a.add(b);
+        BigInteger d=a.multiply(b); 
+        System.out.println(c);
+        System.out.println(d);
+    }
+}
